@@ -166,6 +166,13 @@
     </model>
     <model>
       <configItem>
+        <name>abnt2</name>
+        <description>Brazilian ABNT2</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>brother</name>
         <description>Brother Internet</description>
         <vendor>Brother</vendor>
@@ -677,6 +684,13 @@
     </model>
     <model>
       <configItem>
+        <name>jp106</name>
+        <description>Japanese 106-key</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>flexpro</name>
         <description>Keytronic FlexPro</description>
         <vendor>Keytronic</vendor>
@@ -687,6 +701,13 @@
         <name>kinesis</name>
         <description>Kinesis</description>
         <vendor>Kinesis</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+	<name>kr106</name>
+	<description>Korean 106-key</description>
+	<vendor>Generic</vendor>
       </configItem>
     </model>
     <model>
@@ -1995,25 +2016,25 @@
         <variant>
           <configItem>
             <name>left_hand</name>
-            <description>Braille (left-handed)</description>
+            <description>Braille (one-handed, left)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>left_hand_invert</name>
-            <description>Braille (left-handed inverted thumb)</description>
+            <description>Braille (one-handed, left, inverted thumb)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>right_hand</name>
-            <description>Braille (right-handed)</description>
+            <description>Braille (one-handed, right)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>right_hand_invert</name>
-            <description>Braille (right-handed inverted thumb)</description>
+            <description>Braille (one-handed, right, inverted thumb)</description>
           </configItem>
         </variant>
       </variantList>
@@ -3039,13 +3060,13 @@
         <variant>
           <configItem>
             <name>dvorak-l</name>
-            <description>English (Dvorak, left-handed)</description>
+            <description>English (Dvorak, one-handed, left)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvorak-r</name>
-            <description>English (Dvorak, right-handed)</description>
+            <description>English (Dvorak, one-handed, right)</description>
           </configItem>
         </variant>
         <variant>
@@ -7262,6 +7283,12 @@
       </option>
       <option>
         <configItem>
+          <name>lv3:caps_switch_capslock_with_ctrl</name>
+          <description>Caps Lock; Ctrl+Caps Lock for original Caps Lock action</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>lv3:bksl_switch</name>
           <description>Backslash</description>
         </configItem>
@@ -7610,6 +7637,12 @@
       </option>
       <option>
         <configItem>
+          <name>caps:return</name>
+          <description>Make Caps Lock an additional Return key</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>caps:super</name>
           <description>Make Caps Lock an additional Super</description>
         </configItem>
@@ -7634,6 +7667,12 @@
       </option>
       <option>
         <configItem>
+          <name>caps:ctrl_shifted_capslock</name>
+          <description>Make Caps Lock an additional Ctrl and Shift + Caps Lock the regular Caps Lock</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>caps:ctrl_modifier</name>
           <description>Make Caps Lock act as an additional Ctrl modifier, but keep identifying as Caps Lock</description>
         </configItem>
@@ -7642,6 +7681,12 @@
         <configItem>
           <name>caps:digits_row</name>
           <description>Caps Lock gives digits on the digits row (Azerty layouts)</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>caps:digits_row_independent_lock</name>
+          <description>Shift + Caps locks the digits on the digits row, Caps Lock alone behaves as usual (Azerty layouts)</description>
         </configItem>
       </option>
       <option>
@@ -7727,6 +7772,12 @@
         <configItem>
           <name>altwin:swap_lalt_lwin</name>
           <description>Left Alt is swapped with Left Win</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>altwin:swap_ralt_rwin</name>
+          <description>Right Alt is swapped with Right Win</description>
         </configItem>
       </option>
       <option>
@@ -8270,6 +8321,18 @@
         <configItem>
           <name>terminate:ctrl_alt_bksp</name>
           <description>Ctrl+Alt+Backspace</description>
+        </configItem>
+      </option>
+    </group>
+    <group allowMultipleSelection="true">
+      <configItem>
+        <name>fkeys</name>
+        <description>Function keys</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>fkeys:basic_13-24</name>
+          <description>Use F13-F24 as usual function keys</description>
         </configItem>
       </option>
     </group>
